@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `백엔드 개발자`,
       description: ['함께 일하고 싶은', '능동적으로 일하는', '이로운 것을 만드는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'emoji.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/ggam-nyang`,
