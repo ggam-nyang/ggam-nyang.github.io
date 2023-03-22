@@ -17,8 +17,8 @@ Kotlin in Action을 읽고 정리할 예정.
 - 코틀린의 빌더 패턴이란, 디자인 패턴 빌더 패턴과 같다. (p.44)
 <br>
 
-```java
-JuiceBuilder
+```kotlin
+JuiceBuilder()
         .water(100)
         .ice(20)
         .orange(5)
