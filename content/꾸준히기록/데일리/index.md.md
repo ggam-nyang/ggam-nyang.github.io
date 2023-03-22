@@ -16,13 +16,14 @@ Kotlin in Action을 읽고 정리할 예정.
 
 - 코틀린의 빌더 패턴이란, 디자인 패턴 빌더 패턴과 같다. (p.44)
 <br>
+
 ```java
 JuiceBuilder
         .water(100)
         .ice(20)
         .orange(5)
         .banana(10)
-        .build
+        .build()
 ```
 이처럼 Builder를 만들어 사용하는데, 파라미터가 명시적이고 필수 파라미터를 확인할 수 있다.
 외에도 여러 이점이 있어 Lombok에서도 지원하는 패턴인데
