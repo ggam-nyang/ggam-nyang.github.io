@@ -1,6 +1,6 @@
 ---
 emoji: 🔥
-title: 테라폼이란?
+title: Jenkins 설치
 date: '2023-03-28 22:00:00'
 author: 지구깜냥
 tags: Jenkins Devops 클라우드 배포 deploy
