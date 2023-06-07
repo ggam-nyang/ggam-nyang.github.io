@@ -1,8 +1,4 @@
 
-_
-/content/꾸준히기록/데일리/2023/04/02.md,d/9/d950da30e82011b228b1e88e12ac59bf14d58ae1
-_
-/content/꾸준히기록/데일리/2023/04/03.md,7/4/74c0c149352b566eb59cc665ae30a3923c81f2a4
 q
 Acontent/열심히기록/Numble-Deploy/호스트님 1차 세션.md,f/5/f5ac98e33daf7689a03e169d0be92962f1c4d7c1
 m
@@ -19,3 +15,35 @@ o
 ?content/열심히기록/Numble-Deploy/Numble_Deploy_DeepDive.md,4/4/44194baf6be575e932b1eead8c85b36fb3bf9a0b
 _
 /content/꾸준히기록/LongBlack/2023/04/08.md,1/8/189a0ecd92428b459ef21adb7cef233b9ec6ce54
+[
++content/꾸준히기록/daily/2023/04/11.md,2/9/2983fc9c8358b796e5593beb2e6aecba0dbc4708
+_
+/content/꾸준히기록/longblack/2023/04/13.md,6/2/62d1ed0f5fdffc24e0670618be94975a407ee87c
+_
+/content/꾸준히기록/longblack/2023/04/18.md,5/4/5411c4243e7a126592885871c09e3b442ade1ede
+[
++content/꾸준히기록/daily/2023/04/07.md,3/3/33895e50a6532334d642bf4405033a0ad18e8c14
+[
++content/꾸준히기록/daily/2023/04/08.md,8/0/8027685e06c02ec03fbd5697bcdafedab404117a
+[
++content/꾸준히기록/daily/2023/04/14.md,8/9/8916a3d3399a636b69ddac86bca8de13925fc8e3
+[
++content/꾸준히기록/daily/2023/04/04.md,e/6/e6aa7a4412a10545750ff3efc6a6d3eb8e637425
+[
++content/꾸준히기록/daily/2023/04/05.md,b/6/b6c7ad3ea2bcb06298e6ae42834795c400a6faf0
+[
++content/꾸준히기록/daily/2023/04/06.md,1/d/1d9b169af9c094bd52ecea631a151dd979e5acc5
+[
++content/꾸준히기록/daily/2023/04/20.md,9/a/9a3eec48b1408ce076de3be62f053ea1156ac590
+e
+5content/꾸준히기록/sideproject/setting-gradle.md,1/a/1aa4741addcf6e7cf8f50a323930c31a38ecf348
+[
++content/꾸준히기록/daily/2023/04/21.md,d/1/d12771e6c9fbf87383a84507dd0cf3ebed85d2f7
+_
+/content/꾸준히기록/longblack/2023/04/20.md,6/5/65b8770ef9ddc336fab9daac6056a4af6da5162c
+[
++content/꾸준히기록/daily/2023/04/28.md,d/9/d927033ffa6165ac15d881c15f00bcd8ef5f1efa
+[
++content/꾸준히기록/daily/2023/04/23.md,0/5/05e87557df4693758a427c496818559b50f4cba0
+_
+/content/꾸준히기록/longblack/2023/04/26.md,7/a/7a5d3cc690ed97a62862be78866cc3a93c2e434a
