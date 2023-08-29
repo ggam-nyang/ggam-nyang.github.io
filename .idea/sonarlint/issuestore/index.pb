@@ -12,8 +12,6 @@ R
 R
 "content/steady/daily/2023/06/30.md,3/7/37c4e13afc99b70570b8682807a98558376bc74c
 R
-"content/steady/daily/2023/07/05.md,a/6/a63cfc5f1bd17cbdc673fe85e3cd979c1dcdb4c0
-R
 "content/steady/daily/2023/07/03.md,f/d/fd991b52369d99523c27c6b48ef0f6d442f8445a
 `
 0content/passion/Kotlin-In-Action/Sealed class.md,1/9/19eddccdf15e3bee5f41fe39bc5ccde9a52b9650
@@ -21,5 +19,3 @@ R
 "content/steady/daily/2023/07/14.md,f/e/feedef4f1ee5b3baa2be3bc5cf62d9ddd4fbd365
 R
 "content/steady/daily/2023/07/10.md,e/7/e74074302f04738e7f1f790b66c86014e396f764
-R
-"content/steady/daily/2023/07/15.md,9/9/9976d289af368324dfa3ad1ecbcef1f9cf9a5c31
