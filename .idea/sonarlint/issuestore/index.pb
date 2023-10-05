@@ -19,3 +19,7 @@ R
 "content/steady/daily/2023/07/14.md,f/e/feedef4f1ee5b3baa2be3bc5cf62d9ddd4fbd365
 R
 "content/steady/daily/2023/07/10.md,e/7/e74074302f04738e7f1f790b66c86014e396f764
+R
+"content/steady/daily/2023/07/15.md,9/9/9976d289af368324dfa3ad1ecbcef1f9cf9a5c31
+R
+"content/steady/daily/2023/07/05.md,a/6/a63cfc5f1bd17cbdc673fe85e3cd979c1dcdb4c0
