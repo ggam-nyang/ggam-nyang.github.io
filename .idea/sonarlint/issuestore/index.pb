@@ -23,3 +23,7 @@ R
 "content/steady/daily/2023/07/15.md,9/9/9976d289af368324dfa3ad1ecbcef1f9cf9a5c31
 R
 "content/steady/daily/2023/07/05.md,a/6/a63cfc5f1bd17cbdc673fe85e3cd979c1dcdb4c0
+[
++content/passion/bottle-letter/SpringDocs.md,e/9/e936b7c0ca7ea38d2da4d4dd7c1f60c24f9fecf6
+e
+5content/passion/bottle-letter/SpringSecurity-login.md,c/1/c107e00a703ca0b71627188a643fdb79948fd33e
