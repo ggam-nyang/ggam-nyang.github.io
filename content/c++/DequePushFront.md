@@ -1,13 +1,13 @@
 ---
 emoji: ✏️
-title: C++: Deque push_front는 O(1)일까?
+title: Deque push_front는 O(1)일까?
 date: '2024-01-30 22:00:00'
 author: 지구깜냥
 tags: c++ cpp deque data-structure
-categories: c++
+categories: C++
 ---
 
-# deque의 push_front 시간복잡도
+## deque의 push_front 시간복잡도
 
 list는 Node로 구성되어, 삽입 삭제에 유리하지만 operator [] 를 사용할 수 없다.
 vector는 데이터가 선형으로 이어져야 하기 때문에 삽입/삭제 시 불리하지만, operator []가 가능하다.
