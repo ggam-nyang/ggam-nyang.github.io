@@ -9,7 +9,5 @@ W
 'content/passion/best-robbins/jenkins.md,5/e/5e9ba27665b8e1f2469affad3ad2d263022737c5
 U
 %content/passion/Kotlin/value-class.md,e/f/ef44f8913821095591f17698b844bcebf575559a
-K
-content/first-post/index.md,5/2/52335575804d45a9cd713f220e2aeb716d382f81
 \
 ,content/steady/sideproject/setting-gradle.md,7/a/7aa05ad0a2e8691dfb34b1c878a167743c8f325d
