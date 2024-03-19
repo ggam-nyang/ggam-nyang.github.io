@@ -17,3 +17,9 @@ M
 content/c++/DequePushFront.md,b/b/bbf321cf73be9278cdd922d090d1f8a7c879e0ad
 J
 content/c++/vsExtension.md,6/3/63df7f72dc26f08350afdff69ef72bcb1f50facb
+N
+content/c++/VirtualFunction.md,2/f/2f1e3143e363f77887af7c043cba680daba6187d
+X
+(content/c++/lobbyServer/PacketProcess.md,9/1/91b1e8a589326f3f06c1e95652f7e0877597afba
+V
+&content/c++/lobbyServer/MemoryCycle.md,e/4/e411d21bc5ba810e37a5ce642bab6a43e3ba72c7
