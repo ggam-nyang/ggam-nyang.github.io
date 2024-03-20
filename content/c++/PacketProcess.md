@@ -1,9 +1,9 @@
 ---
 emoji: ✏️
-title: [LobbyServer] 소켓 통신 오류 디버깅 (패킷 처리 오류)
+title: 소켓 통신 오류 디버깅 (패킷 처리 오류)
 date: '2024-03-07 22:00:00'
 author: 지구깜냥
-tags: c++ cpp packet lobbyServer boost
+tags: c++ cpp packet LobbyServer boost
 categories: C++
 ---
 ## 오류 발생 과정

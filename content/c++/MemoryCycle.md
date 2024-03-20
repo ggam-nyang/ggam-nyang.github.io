@@ -1,9 +1,9 @@
 ---
 emoji: ✏️
-title: [LobbyServer] 메모리 사이클 관리
+title: 메모리 사이클 관리
 date: '2024-03-19 22:00:00'
 author: 지구깜냥
-tags: c++ cpp memory shared_ptr
+tags: c++ cpp memory shared_ptr LobbyServer
 categories: C++
 ---
 ## 메모리 사이클
