@@ -3,7 +3,7 @@ emoji: ✏️
 title: Deque push_front는 O(1)일까?
 date: '2024-01-30 22:00:00'
 author: 지구깜냥
-tags: c++ cpp deque data-structure
+tags: c++ cpp deque 자료구조
 categories: C++
 ---
 
