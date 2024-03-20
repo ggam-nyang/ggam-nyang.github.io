@@ -8,7 +8,7 @@ categories: C++
 ---
 ## 오류 발생 과정
 
-![lobbyDiagram](../image/lobbyDiagram.png)
+![lobbyDiagram](image/lobbyDiagram.png)
 
 Server ↔ Client 간의 소켓 통신 과정은 아래와 같습니다.
 
