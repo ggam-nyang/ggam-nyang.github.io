@@ -68,181 +68,61 @@ Send()의 종료 이후, 비동기함수가 실행될 때 temp의 메모리 안�
         }
       }
     })
-  </script><title data-react-helmet="true">메모리 사이클 관리</title><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">ggam-nyang.com</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">✏️</div><div class="info"><div class="categories"><a class="category" href="/posts/C++">C++</a></div></div><h1 class="title">소켓 통신 오류 디버깅 (패킷 처리 오류)</h1><div class="info"><div class="author">posted by <strong>지구깜냥</strong>,</div> <!-- -->March 07, 2024</div></header><div class="post-content"><div class="markdown"><h2 id="오류-발생-과정" style="position:relative;"><a href="#%EC%98%A4%EB%A5%98-%EB%B0%9C%EC%83%9D-%EA%B3%BC%EC%A0%95" aria-label="오류 발생 과정 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>오류 발생 과정</h2>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 66.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjElEQVQ4y4WTiW6CQBCGef93a20UFKygKF4o3vf1N9/ETRRtSzLZdWfmm1PveDrrUQ7Hk07ni6bFTHGSaDAcmXBvd1KdL1dNpoVacaJelinrD+wdG3Teb8DvVqz94ag8n5jxbn9Q2u1ps92pk3bNpj8Yajgaa7vbK07afwNbrVijca6o+a2aHxg0uTuR0XK1Nl1Qb9wr+AeIA8B2u6M07aqYzdXL+sonU3sjS8DdXqZxPrEW4ecBeBQHPZ4u4gM0my80XyzNOWo2FYaRwcKoaXo+ssPPcxAHckL/iMgA6B1DCaNIcZzYG/ZUABA7x/HKIJSX680i3iTLDiClMlGGwLlabwyM3mVnwMVyZZFw4KR3GJrxvW8AsKNsAMAIRu9egEUxM6dqrWYQ7h+fFdUbDdUboSqVL/vNpKs1X35Qlx8EFuBthjzSbBaVkwzpH+KWGLneZA60BB13qnoBsrCUsN5s7XwcEL1kHQA6Jyfo3FCegC6qk/KAKA15p3P9fJpyeQ/La/Tu/vgHKOt+AG3j39Pi8EDlAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="lobbyDiagram"
-        title="lobbyDiagram"
-        src="/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/37523/lobbyDiagram.png"
-        srcset="/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/e9ff0/lobbyDiagram.png 180w,
-/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/f21e7/lobbyDiagram.png 360w,
-/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/37523/lobbyDiagram.png 720w,
-/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/302a4/lobbyDiagram.png 1080w,
-/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/07a9c/lobbyDiagram.png 1440w,
-/static/cd6b2dea1a7191b887e5d4dc81c7c9b9/95e59/lobbyDiagram.png 1460w"
-        sizes="(max-width: 720px) 100vw, 720px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-<p>Server ↔ Client 간의 소켓 통신 과정은 아래와 같습니다.</p>
-<ol>
-<li>Client: <code class="language-text">SET_ID_REQ</code> 를 통해 ID 설정</li>
-<li>Server:  해당 Client의 ID를 설정하고
-<ol>
-<li>“set $ID Success”를 해당 Client에게 전송 (<code class="language-text">SET_ID_RES</code>)</li>
-<li>“$ID 님이 입장하셨습니다”를 모든 Client에게 전송  (<code class="language-text">LOBBY_ENTER_NTF</code>)</li>
-</ol>
-</li>
-<li>Client: <code class="language-text">boost::async_read()</code> 를 통해 수신</li>
-</ol>
-<p>이 과정에서 아래 에러가 발생했습니다.<br>
-libc++abi: terminating due to uncaught exception of type std::__1::system_error: mutex lock failed: Invalid argument<br>
-<strong>(해당 오류는 10번 시도 중 9번 정도로 발생했습니다)</strong></p>
-<h2 id="오류-디버깅" style="position:relative;"><a href="#%EC%98%A4%EB%A5%98-%EB%94%94%EB%B2%84%EA%B9%85" aria-label="오류 디버깅 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>오류 디버깅</h2>
-<p>Client와 Server의 핵심 코드는 아래와 같습니다</p>
-<div class="gatsby-highlight" data-language="c++"><pre class="language-c++"><code class="language-c++">void Client::WorkerThread() {
-  lock.lock();
-  cout &lt;&lt; &quot;[&quot; &lt;&lt; std::this_thread::get_id() &lt;&lt; &quot;]&quot;
-       &lt;&lt; &quot; Thread start&quot; &lt;&lt; endl;
-  lock.unlock();
+  </script><title data-react-helmet="true">메모리 사이클 관리</title><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">ggam-nyang.com</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1l6di18" role="combobox" aria-expanded="false"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-11tfndm"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" autoCapitalize="none" spellcheck="false"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">✏️</div><div class="info"><div class="categories"><a class="category" href="/posts/C++">C++</a></div></div><h1 class="title">메모리 사이클 관리</h1><div class="info"><div class="author">posted by <strong>지구깜냥</strong>,</div> <!-- -->March 19, 2024</div></header><div class="post-content"><div class="markdown"><h2 id="메모리-사이클" style="position:relative;"><a href="#%EB%A9%94%EB%AA%A8%EB%A6%AC-%EC%82%AC%EC%9D%B4%ED%81%B4" aria-label="메모리 사이클 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>메모리 사이클</h2>
+<p>기존 코드를 보면 아래와 같습니다.</p>
+<div class="gatsby-highlight" data-language="c++"><pre class="language-c++"><code class="language-c++">void Client::Send() {
+  ProtocolPtr temp;
+  cout &lt;&lt; &quot;닉네임을 입력해주세요.&quot; &lt;&lt;endl;
+  cout &lt;&lt; &quot;nickname.&quot; &lt;&lt;endl;
+  isSetId = true;
+  getline(std::cin, writeBuffer_);
+  temp = Protocol::create(ProtocolType::SET_ID, writeBuffer_);
 
-  ios.run();
-
-   lock.lock();
-  cout &lt;&lt; &quot;[&quot; &lt;&lt; std::this_thread::get_id() &lt;&lt; &quot;]&quot;
-       &lt;&lt; &quot; Thread End&quot; &lt;&lt; endl;
-  lock.unlock();
+  sock.async_write_some(
+      asio::buffer(temp-&gt;encode()),
+      [this](const system::error_code&amp; ec, size_t) { SendHandle(ec); });
+}</code></pre></div>
+<p>ProtocolPtr은 패킷을 주고 받을 때 사용하는 encode, decode가 구현된 객체입니다.
+여기서 temp 변수는 Send() 함수에서 선언한 지역 변수이고, Send() 함수의 종료와 함께 소멸됩니다.</p>
+<p>Send() 함수는 비동기 함수인 boost::asio::async_write_some()을 호출합니다.<br>
+이때 Send() 함수가 종료된 이후 비동기 함수가 실행되고, 실행 후 SendHandle() 함수가 호출됩니다.</p>
+<p>문제는 <strong>여기서</strong> 발생할 수 있습니다.<br>
+비동기함수는 temp->encode()를 매개변수로 전달받는데, temp는 Send() 함수가 종료되면 소멸됩니다.
+Send()의 종료 이후, 비동기함수가 실행될 때 temp의 메모리 안정성은 보장되지 않습니다.<br>
+때문에 메모리 이슈가 발생할 수 있고, 우리는 이 메모리를 관리해줄 필요가 있습니다.</p>
+<h3 id="람다에-캡쳐" style="position:relative;"><a href="#%EB%9E%8C%EB%8B%A4%EC%97%90-%EC%BA%A1%EC%B3%90" aria-label="람다에 캡쳐 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>람다에 캡쳐</h3>
+<p>비동기 함수에서 temp를 사용하기 위해 람다에 캡쳐를 사용합니다.</p>
+<div class="gatsby-highlight" data-language="c++"><pre class="language-c++"><code class="language-c++">void Client::Send() {
+ ... 중략
+  sock.async_write_some(
+      asio::buffer(temp-&gt;encode()),
+      [this, temp](const system::error_code&amp; ec, size_t) { SendHandle(ec, temp); });
+}</code></pre></div>
+<p>위와 같이 핸들러 함수에 temp를 캡쳐하여 전달하면, temp 지역 변수는 SendHandle() 함수 종료까지 메모리가 유지됩니다.
+때문에 발생할 수 있는 메모리 이슈를 방지할 수 있습니다.</p>
+<h3 id="명시적-메모리-관리" style="position:relative;"><a href="#%EB%AA%85%EC%8B%9C%EC%A0%81-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC" aria-label="명시적 메모리 관리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>명시적 메모리 관리</h3>
+<p>그러나 캡쳐 방식은 메모리 관리가 명시적이지 않습니다. 람다의 문법도 그렇고, 캡쳐된 변수의 메모리 사이클은 암시적으로 나타납니다.</p>
+<p>c++은 메모리 관리가 중요한 언어이기 때문에, 명시적으로 메모리 사이클을 나타내는 코드가 중요할 수 있습니다.</p>
+<div class="gatsby-highlight" data-language="c++"><pre class="language-c++"><code class="language-c++">void Client::Send() {
+  ProtocolPtr temp;
+  bufferContainer_.push_back(temp); // 1) temp를 컨테이너에 추가
+  bufferContainer_.push_back(buffer(temp-&gt;encode())) // 또는 2) buffer를 저장 (이게 더 좋은 방식인듯..?)
+  
+    
+    ... 중략
+  sock.async_write_some(
+      asio::buffer(temp-&gt;encode()),
+      [this](const system::error_code&amp; ec, size_t) { SendHandle(ec, temp); });
 }
 
-void Client::Receive() {
-  sock.async_read_some(asio::buffer(buffer_, buffer_.size()),
-                       [this](const system::error_code&amp; ec, size_t size) {
-                         ReceiveHandle(ec, size);
-                       });
-}
-
-void Client::ReceiveHandle(const system::error_code&amp; ec, size_t size) {
-  if (ec) {
-    cout &lt;&lt; &quot;async_read_some error: &quot; &lt;&lt; ec.message() &lt;&lt; endl;
-    StopAll();
-    return;
-  }
-
-  if (size == 0) {
-    cout &lt;&lt; &quot;Server wants to close this session&quot; &lt;&lt; endl;
-    StopAll();
-    return;
-  }
-
-  buffer[size] = &#39;\0&#39;;
-  readBuffer = std::string(buffer.begin(), buffer.begin() + size);
-  ProtocolPtr temp = Protocol::create(readBuffer);
-
-  lock.lock();
-  cout &lt;&lt; temp-&gt;getBody() &lt;&lt; endl;
-  lock.unlock();
-
-  Receive();
-}</code></pre></div>
-<p>Thread 생성 시에 lock을 사용한 부분은 문제가 없었고, Receive 함수의 lock 호출과는 실행 시점이 분리되어 있습니다. 때문에 lock 관련 에러는 Receive 함수에서 발생했다고 가정했습니다.
-(WorkerThread(), ReceiveHandle()에서 모두 std::mutex lock이 필요하지 않은 점은 넘어가겠습니다!)</p>
-<blockquote>
-<p><strong>[1차 시도]</strong></p>
-<p>시도: lock이 문제라면, 해당 코드를 삭제해보자</p>
-<p>lock과 관련된 에러메세지가 발생하고, cout 전에 스레드 안정성을 보장하기 위해 lock이 필요하지 않아 보였습니다. lock(), unlock() 두 함수를 삭제하고 실행해보았습니다.</p>
-<p>lock이 존재할 땐, 10번에 9번 해당 오류가 발생
-lock 삭제 후, 10번 중 2~3번 정도 에러 메세지 없이 클라이언트 종료</p>
-<p>에러 횟수는 개선되었지만 해결은 되지 않았습니다.
-lock이 아닌 문제도 존재함은 확인했습니다.</p>
-</blockquote>
-<div class="gatsby-highlight" data-language="c++"><pre class="language-c++"><code class="language-c++">void Session::setId(std::string&amp; body) {
-  if (server_-&gt;isValidId(body)) {
-    id = body;
-    writeBuffer = &quot;set [&quot; + id + &quot;] success!&quot;;
-  } else {
-    writeBuffer = body + &quot;는 이미 사용중인 id 입니다.&quot;;
-  }
-
-  ProtocolPtr alert = Protocol::create(ProtocolType::ALERT, writeBuffer);
-  write(alert);
-  // this_thread::sleep_for(chrono::milliseconds(100)); ===== 1)
-
-  writeBuffer = &quot;[&quot; + id + &quot;] 님이 로비에 입장하였습니다&quot;;
-  ProtocolPtr alertAll = Protocol::create(ProtocolType::ALERT, writeBuffer);
-  writeAll(alertAll, false);
-}</code></pre></div>
-<p>위 실행 흐름과 같이, Server는 write(), writeAll() 두번의 write 작업을 실행합니다.
-최초 Client는 2번의 응답을 수신하게 됩니다. 디버거를 통해 read/write buffer를 확인하던 중, Client의 최초 Receive() 호출에서 2번의 서버 패킷이 모두 담긴 것을 확인했습니다.</p>
-<blockquote>
-<p><strong>[2차 시도]
-2번의 통신에 딜레이를 주어, Client가 한번씩 수신하도록 하자.</strong></p>
-<p>Server에서 1번 주석 코드를 추가하여, 2번의 통신에 100ms 딜레이 주었습니다.
-이후 오류가 발생하지 않았습니다. (즉, 통신이 끊어져서 수신되면 문제가 없다)</p>
-<p>코드 변경이 없던 이전 방식에서는 buffer에 문제가 발견된 것과 같이
-2번의 통신 중, <code class="language-text">로비 입장</code> 메세지가 클라이언트에서 누락되는 경우도 많았습니다.
-근본적인 해결방법이 아니기에, Client에서 buffer의 메모리 변화를 디버깅했습니다.</p>
-<p>Client의 실행 흐름은 다음과 같습니다. (100ms 지연 없이)</p>
-</blockquote>
-<ol>
-<li><code class="language-text">io_context_.post([*this*]() { Send(); });
-io_context_.post([*this*]() { Receive(); });</code> 를 통해 비동기로 Send, Receive 함수 실행</li>
-<li>Receive → Send → SendHandle → ReceiveHandle 로 실행 (90% 이상)
-<ol>
-<li>간헐적으로 아예 프로그램 종료</li>
-<li>로비에 입장하였습니다(2번째 패킷) 누락</li>
-</ol>
-</li>
-<li>char Array buffer를 확인해보면 다음과 같음
-“\U00000002\0\0\0\U00000013\0\0\0set [haha] success!\U00000002\0\0\0-\0\0\0[haha] 님이 로비에 입장하였습니다” (두개의 패킷이 연속하고 간혹 2번째 패킷은 잘려있음)
-<ol>
-<li>이때 Receive()에서 첫 패킷은 잘 읽어지고, 남은 패킷을 읽는 과정에서 문제 발생</li>
-<li>패킷을 읽는 로직이 memcpy를 통해 <code class="language-text">char* → Protocol 객체</code> 와 같이 위험한 방식으로 구현</li>
-<li>잘린 패킷이 “00000000000입장하였습니다” 거나 “입장하였습니다. 00000” 과 같으면, 빈 문자열이 수신되거나 메모리 오류 발생</li>
-</ol>
-</li>
-</ol>
-<p>정리하면</p>
-<ol>
-<li>첫 에러는 lock 관련 에러가 발생했지만, 발견된 오류는 buffer에 들어오는 패킷은 한번에 큰 크기가 들어올 수도 있고, 더 작은 크기로 분할되어 올 수 있다.</li>
-<li>그러나 buffer를 읽는 Receive에서는 해당 과정에 대한 처리가 없다.
-정해진 Header 크기만큼 읽어서, 두번째 패킷을 읽지 못하거나 잘못된 방식으로 패킷을 읽음
-<ol>
-<li>Protocol.decode() 과정에서 *<code class="language-text">data*.size() &lt; HEADER_SIZE</code> 조건으로 인해 false로 early return 함
-<ol>
-<li>ID <code class="language-text">ㅁㄴ</code> 입력 시, 두번째 패킷이 누락되며 <code class="language-text">body = “”</code> 가 되어 패킷 출력 누락</li>
-</ol>
-</li>
-<li><code class="language-text">body_.resize(header_.body_size);
-std::memcpy(&amp;body_**[**0**]**, *data*.data() + HEADER_SIZE, header_.body_size);</code> 에러
-<ol>
-<li>ID <code class="language-text">ㅁㄴㅇㄹㅁㄴㅇㄹㄴㄹ</code>  입력 시, memcpy를 통한 위험한 메모리 조작으로 Protocol의 header가
-{ProtocolType.UNKNOWN, <code class="language-text">매우 큰 수</code> ) 로 설정됨
-→ body memcpy에서 잘못된 header.body_size로 오류 발생
-→ 클라이언트 프로그램 종료</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-<p>위와 같은 2가지 case가 발생함을 확인했습니다.
-아마 처음 lock 관련 오류의 경우, 2가지 과정의 메모리 오류로 인한 것으로 추측됩니다.
-(정확히 왜 lock 객체의 예외가 발생했는지 조사가 필요합니다…!)</p>
-<h2 id="원인" style="position:relative;"><a href="#%EC%9B%90%EC%9D%B8" aria-label="원인 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>원인</h2>
-<p>에러가 발생했던 원인은 2가지 정도로 정리됩니다.</p>
-<ol>
-<li>memcpy, 잘 설계되지 못한 Protocol 클래스</li>
-<li>TCP 통신을 HTTP와 같이 생각하여, 1개의 통신에서 1개의 패킷이 수신된다고 생각
-(그러나, 패킷은 쪼개지거나 더 크게 뭉쳐서 읽어질 수 있음)</li>
-</ol>
-<p>간단한 채팅서버를 구현해보며 전체적인 코드 흐름을 배웠고, TCP 통신에 대해서도 더 알게 되어
-로비 서버 프로젝트에서는 유의하며 코드를 작성해보겠습니다..!!</p></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/c++/DequePushFront/"><div class="direction">이전 글</div><div class="title">Deque push_front는 O(1)일까?</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/c++/MemoryCycle/"><div class="direction">다음 글</div><div class="title">메모리 사이클 관리</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/ggam-nyang">이재윤</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/c++/PacketProcess/";window.___webpackCompilationHash="66d242f5e3ddcfb05d6b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-e9fab3ef0a508908cd3d.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5c24df27b38077923fd1.js"],"component---src-pages-about-js":["/component---src-pages-about-js-9390096bf41097e4b0a6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5624dba9e118f0c14eba.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-6482faeb3bb7c50bde59.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-ddab12693a62e6d07ce7.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-e9fab3ef0a508908cd3d.js" async=""></script><script src="/framework-584568a4e1fbc6866879.js" async=""></script><script src="/webpack-runtime-be4aa1c6727c0498005b.js" async=""></script></body></html>
+// SendHandle()에서 명시적으로 bufferContainer_에서 temp를 삭제합니다.</code></pre></div>
+<p>위와 같이 container에 사용할 buffer를 담아서 명시적으로 메모리 사이클을 관리할 수 있습니다.<br>
+이렇게 할 경우, buffer가 언제 저장되고 언제 삭제되는지 명시적으로 알 수 있습니다.</p>
+<h3 id="shared_ptr-사용" style="position:relative;"><a href="#shared_ptr-%EC%82%AC%EC%9A%A9" aria-label="shared_ptr 사용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>shared_ptr 사용</h3>
+<p>기존에는 <code class="language-text">using unique_ptr&lt;Protocol> ProtocolPtr</code>을 사용했었습니다.<br>
+unique_ptr은 한 객체만 소유권이 있고, 소유권을 단 하나의 객체에게 보장할 수 있습니다.</p>
+<p>Send()의 지역변수로 Protocol 객체를 생성하는 경우, unique_ptr의 사용이 문제가 발생하진 않지만 좋은 활용은 아니라고 생각합니다.<br>
+예를 들어, Send()에서 broadcast를 호출할 경우, Protocol 객체가 여러개가 될 수 있고, 소유권이 필요한 객체가 여러개가 될 수 있습니다.<br>
+이 경우에는 unique_ptr보다 shared_ptr로 관리하는 것이 효율적입니다.</p>
+<p>뿐만 아니라 unique_ptr은 기능을 떠나 사용자의 의도를 나타냅니다. 그러나 이 경우 레퍼런스 카운트가 꼭 1이 되어야만 하는 의도는 없었습니다.<br>
+때문에 일반적으로 사용하기 좋은 shared_ptr로 변경했습니다.</p></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/c++/lobbyServer/PacketProcess/"><div class="direction">이전 글</div><div class="title">소켓 통신 오류 디버깅 (패킷 처리 오류)</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/c++/lobbyServer/Boost-Work/"><div class="direction">다음 글</div><div class="title">Boost Work란?</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2024<!-- --> <a href="https://github.com/ggam-nyang">이재윤</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/c++/lobbyServer/MemoryCycle/";window.___webpackCompilationHash="66d242f5e3ddcfb05d6b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-e9fab3ef0a508908cd3d.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5c24df27b38077923fd1.js"],"component---src-pages-about-js":["/component---src-pages-about-js-9390096bf41097e4b0a6.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5624dba9e118f0c14eba.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-6482faeb3bb7c50bde59.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-ddab12693a62e6d07ce7.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-e9fab3ef0a508908cd3d.js" async=""></script><script src="/framework-584568a4e1fbc6866879.js" async=""></script><script src="/webpack-runtime-be4aa1c6727c0498005b.js" async=""></script></body></html>
