@@ -93,35 +93,35 @@
 <li>클래스와 객체를 생성할 때 각각 VTable, VPtr이 생성된다.</li>
 </ul>
 <p>아래 예시를 보자.</p>
-<div class="gatsby-highlight" data-language="cpp"><pre class="language-cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream></span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<div class="gatsby-highlight" data-language="c++"><pre class="language-c++"><code class="language-c++">#include &lt;iostream&gt;
+using namespace std;
 
-<span class="token keyword">class</span> <span class="token class-name">base</span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"print base class\\n"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+class base {
+public:
+	virtual void print() { cout &lt;&lt; &quot;print base class\\n&quot;; }
 
-	<span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"show base class\\n"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	void show() { cout &lt;&lt; &quot;show base class\\n&quot;; }
+};
 
-<span class="token keyword">class</span> <span class="token class-name">derived</span> <span class="token operator">:</span> <span class="token base-clause"><span class="token keyword">public</span> <span class="token class-name">base</span></span> <span class="token punctuation">{</span>
-<span class="token keyword">public</span><span class="token operator">:</span>
-	<span class="token keyword">void</span> <span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"print derived class\\n"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+class derived : public base {
+public:
+	void print() { cout &lt;&lt; &quot;print derived class\\n&quot;; }
 
-	<span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"show derived class\\n"</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	void show() { cout &lt;&lt; &quot;show derived class\\n&quot;; }
+};
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-	base<span class="token operator">*</span> bptr<span class="token punctuation">;</span>
-	derived d<span class="token punctuation">;</span>
-	bptr <span class="token operator">=</span> <span class="token operator">&amp;</span>d<span class="token punctuation">;</span>
+int main()
+{
+	base* bptr;
+	derived d;
+	bptr = &amp;d;
 
-	bptr<span class="token operator">-></span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// derived.print()</span>
+	bptr-&gt;print(); // derived.print()
 
-	bptr<span class="token operator">-></span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// base.show()</span>
+	bptr-&gt;show(); // base.show()
 
-	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+	return 0;
+}
 </code></pre></div>
 <p>각 <code class="language-text">bptr = &amp;d</code> 에서 실제 derived 객체를 생성하고, 타입은 base 포인터이다.
 이때 derived 객체는 멤버 변수로만 이뤄지지 않고, VPtr이라는 주소값이 할당된다.
