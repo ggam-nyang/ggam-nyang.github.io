@@ -11,7 +11,7 @@ categories: C++ Boost
 Boost asio를 사용해 소켓 서버를 생성하면, 항상 io_service(지금은 io_context로 대체)를 사용하게 된다.  
 [링크](https://stackoverflow.com/questions/17156541/why-do-we-need-to-use-boostasioio-servicework)에선 work를 사용해야 하는 이유를 다루고 있다.
 
-```cpp
+```c++
 int main()
 {
     boost::asio::io_service srv;
@@ -33,7 +33,7 @@ int main()
 }
 ```
 
-```cpp
+```c++
 int main()
 {
     boost::asio::io_service srv;

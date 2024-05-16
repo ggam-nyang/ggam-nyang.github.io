@@ -14,7 +14,7 @@ vector는 데이터가 선형으로 이어져야 하기 때문에 삽입/삭제 
 c++ 표준 라이브러리가 제공하는 Deque는 이 둘을 섞은 느낌이다.
 Deque는 block의 형태로 구현되어 있다.
 
-```cpp
+```c++
 _NODISCARD const_reference operator[](size_type _Pos) const noexcept /* strengthened */ {
 #if _CONTAINER_DEBUG_LEVEL > 0
         _STL_VERIFY(_Pos < _Mysize(), "deque subscript out of range");
@@ -43,7 +43,7 @@ block들을 map으로 관리하고, 이 block에 접근하여 offset에 해당�
 
 push_front()를 보자
 
-```cpp
+```c++
 template <class... _Tys>
 void _Emplace_front_internal(_Tys&&... _Vals) {
     if (_Myoff() % _Block_size == 0 && _Mapsize() <= (_Mysize() + _Block_size) / _Block_size) {

@@ -29,7 +29,7 @@ categories: C++
   
 아래 예시를 보자.
 
-```cpp
+```c++
 #include <iostream>
 using namespace std;
 
